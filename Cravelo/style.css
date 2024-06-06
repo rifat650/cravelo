@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Nanum+Brush+Script&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+
+
+
+/* .nanum-brush-script-regular {
+    font-family: "Nanum Brush Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+  } */
+
+
+
+  /* .aclonica-regular {
+    font-family: "Aclonica", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  } */
+
+  /* ------------------------header section ----------------------------*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+  .container{
+    max-width: 1600px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right:20px;
+
+  }
+
+  .banner_Section .main_div .container{
+    padding: 30px 0px;
+  }
+
+ .banner_Section .main_div .container .header_section{
+    /* From https://css.glass */
+background: rgba(210, 206, 201, 0.8);
+border-radius: 50px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(1.6px);
+width: 80%;
+margin: 0 auto;
+height: fit-content;
+background-position: center;
+  }
+
+
+  .banner_Section .main_div .container .header_section  .main_column{
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+
+}
+.banner_Section .main_div .container .header_section  .main_column .right_column{
+    text-align: center;
+    align-self: center;
+}
+.banner_Section .main_div .container .header_section .main_column .left_column{
+    text-align: center;
+    align-items: center;
+    align-self: center;
+}
+.banner_Section .main_div .container .header_section  .main_column .left_column img{
+    width:auto;
+    height: 5vh;
+    padding-left: 100px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    
+}
+
+.banner_Section .main_div .container .header_section .main_column .right_column li:last-child{
+    padding-right: 0;
+}
+
+.banner_Section .main_div .container .header_section  .main_column .right_column li{
+list-style-type:none;
+display: inline-block;
+padding-right: 50px;
+font-size: 20px;
+
+}
+
+
+.banner_Section .main_div .container .header_section .main_column .right_column a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+}
+
+
+/* -----------------------------banner section-------------------------- */
+
+
+
+.banner_Section .main_div {
+
+    background: url(banner-bg.jpeg);
+    height:100vh;
+    width:100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+/* .banner_Section .main_div::after {
+    content: "";
+    position: absolute;
+    background-color: #000000c9;
+    opacity: 0.7;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+} */
+
+
+.banner_Section .main_div .headline{
+    margin-top: 300px;
+}
+.banner_Section .main_div .headline h1{
+    text-align: center;
+    font-family: "Nanum Brush Script", cursive;
+    font-weight:bolder;
+    font-style: italic;
+    font-size: 110px;
+    color: LightSlateGrey;
+
+}
+.banner_Section .main_div .headline h4{
+    font-family: "Caveat", cursive;
+    font-weight:normal;
+    font-style: normal;
+    font-size: 50px;
+    text-align: center;
+    color: rgb(0, 10, 23);
+
+}
+
+
+/* --------------------------menu section------------------------------ */
+
+.menu_section .main_div{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 15px;
+    padding:100px 10px;
+    
+
+}
+.menu_section  .main_div .flex_column img{
+    width:100%;
+    height: 63vh;
+}
+.menu_section  .main_div .flex_column{
+    position: relative;
+   
+}
+.menu_section  .main_div .flex_column .caption{
+    position: absolute;
+    left: 0%;
+    top:75%;
+    text-align: center;
+    width: 100%;
+    height: 0;  
+    opacity: 0;
+    transition: 0.4s;
+    z-index: 1;
+}
+
+.menu_section  .main_div .flex_column::after{
+    content: "";
+    position: absolute;
+    height: 30%;
+    width: 100%;
+    background: rgb(29, 29, 29);
+   bottom: 0;
+    left: 0;
+    opacity: 0;
+    transition: 0.4s;
+
+}
+.menu_section  .main_div .flex_column:hover::after{
+    opacity: 0.6;
+
+}
+
+.menu_section  .main_div .flex_column:hover  .caption{
+    opacity: 1;
+}
+
+.menu_section  .main_div .flex_column .caption h2{
+    font-family: "Aclonica", sans-serif;
+    color: rgb(0, 225, 255);
+    font-size: 50px;
+    font-weight: bold;
+}
+.menu_section  .main_div .flex_column .caption p{
+    font-family: "Aclonica", sans-serif;
+    font-size: 30px;
+    color: rgb(0, 225, 255);
+    font-weight:normal;
+}
+
+
+
+.gallery .main_div{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:15px;}
+
+    .gallery .main_div img{
+        width: 100%;
+    }
+
